@@ -9,5 +9,5 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
     apt-get update -qq && apt-get install -y nodejs yarn
 
 WORKDIR /product-register
-COPY Gemfile Gemfile.lock /product-register
+COPY Gemfile Gemfile.lock /product-register/
 RUN bundle install
